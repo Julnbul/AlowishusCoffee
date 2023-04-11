@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Jost:regular,500,600,800,900,&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Inter:500,600,&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <title>Alowishus</title>
@@ -16,13 +17,15 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__container container">
+        <!--
         <div class="header__bg image">
           <img src="img/header/Ellipse.png" alt="">
         </div>
-        <a class="header__logo" href="index.html">
+        -->
+        <a class="header__logo image-center" href="index.html">
           <img src="img/header/logo.svg" alt="">
         </a>
-        <div class="header__content">
+        <div class="header__body">
           <nav class="header__menu menu hidden-mobile">
             <ul class="menu__list">
               <li class="menu__item">
@@ -39,8 +42,8 @@
               </li>
             </ul>
           </nav>
-          <a class="header__basket image-wrapper">
-            <img src="img/header/basket.svg" alt="">
+          <a class="header__basket image-center" aria-label="basket">
+            <img src="img/header/basket.svg" alt="basket" title="basket">
           </a>
           <div class="header__button-wrapper">
             <a href="#" class="header__button button">Buy gift vouchers</a>
@@ -60,9 +63,9 @@
               <p>A drink from the ‘My Alowishus’ bottled brews range OR grab one of our delicious coffee’s.</p>
             </div>
           </header>
-          <div class="start__button-wrapper">
-            <a href="#" class="button">Download App</a>
-            <a href="#" class="start__link">Shop Coffee</a>
+          <div class="start__buttons">
+            <a href="#" class="start__button button">Download App</a>
+            <a href="#" class="start__button-link button">Shop Coffee</a>
           </div>
         </div>
       </section>
@@ -77,7 +80,7 @@
           </header>
           <ul class="explore__list">
             <li class="explore__item">
-              <div class="explore-card">
+              <article class="explore-card">
                 <header class="explore-card__head">
                   <h3 class="explore-card__title h3">Our Catering</h3>
                   <div class="explore-card__text">
@@ -86,15 +89,13 @@
                   </div>
                 </header>
                 <div class="explore-card__body">
-                  <div class="explore-card__image-wrapper">
-                    <img class="image" src="img/explore/food.png" alt="">
-                  </div>
+                  <img class="explore-card__image" src="img/explore/food.png" alt="">
                   <a href="#" class="explore-card__button button">Order cathering</a>
                 </div>
-              </div>
+              </article>
             </li>
             <li class="explore__item">
-              <div class="explore-card">
+              <article class="explore-card">
                 <div class="explore-card__head">
                   <h3 class="explore-card__title h3">The Food</h3>
                   <div class="explore-card__text">
@@ -103,15 +104,13 @@
                   </div>
                 </div>
                 <div class="explore-card__body">
-                  <div class="explore-card__image-wrapper">
-                    <img class="image" src="img/explore/fast-food.png" alt="">
-                  </div>
+                  <img class="explore-card__image" src="img/explore/fast-food.png" alt="">
                   <a href="#" class="explore-card__button button">food menu</a>
                 </div>
-              </div>
+              </article>
             </li>
             <li class="explore__item">
-              <div class="explore-card">
+              <article class="explore-card">
                 <div class="explore-card__head">
                   <h3 class="explore-card__title h3">The Gelato</h3>
                   <div class="explore-card__text">
@@ -119,12 +118,10 @@
                   </div>
                 </div>
                 <div class="explore-card__body">
-                  <div class="explore-card__image-wrapper">
-                    <img class="image" src="img/explore/ice-cream.png" alt="">
-                  </div>
+                  <img class="explore-card__image" src="img/explore/ice-cream.png" alt="">
                   <a href="#" class="explore-card__button button">Discover more</a>
                 </div>
-              </div>
+              </article>
             </li>
           </ul>
         </div>
@@ -154,20 +151,20 @@
             <li class="best-product__item">
               <article class="product-card">
                 <header class="product-card__head">
-                  <div class="product-card__image image-wrapper">
-                    <img class="image" src="img/best/1.png" alt="">
-                  </div>
+                  <img class="product-card__image" src="img/best/1.png" alt="">
                   <div class="product-card__title-wrapper">
-                    <div class="product-card__position-rating">#1 Selling</div>
+                    <div class="product-card__rating">#1 Selling</div>
                     <h3 class="product-card__title h3">Double Espresso</h3>
                   </div>
                 </header>
                 <div class="product-card__body">
-                  <div class="product-card__text h6">
+                  <div class="product-card__text text-small">
                     <p> Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia
+                      consequat duis. Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint.
+                      Velit officia
                       consequat duis.</p>
                   </div>
-                  <div class="product-card__selling">
+                  <div class="product-card__prices">
                     <div class="product-card__price">$59.99</div>
                     <a href="#" class="product-card__button button">Order now</a>
                   </div>
@@ -177,20 +174,17 @@
             <li class="best-product__item">
               <article class="product-card">
                 <header class="product-card__head">
-                  <div class="product-card__image image-wrapper">
-                    <img class="image" src="img/best/2.png" alt="">
-                  </div>
+                  <img class="product-card__image" src="img/best/2.png" alt="">
                   <div class="product-card__title-wrapper">
-                    <div class="product-card__position-rating">#2 Selling</div>
-                    <h3 class="product-card__title h3">Caramel Frappe</h3>
+                    <div class="product-card__rating">#2 Selling</div>
+                    <h3 class="product-card__title h3">Caramel</h3>
                   </div>
                 </header>
                 <div class="product-card__body">
-                  <div class="product-card__text h6">
-                    <p> Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia
-                      consequat duis.</p>
+                  <div class="product-card__text text-small">
+                    <p> </p>
                   </div>
-                  <div class="product-card__selling">
+                  <div class="product-card__prices">
                     <div class="product-card__price">$59.99</div>
                     <a href="#" class="product-card__button button">Order now</a>
                   </div>
@@ -200,20 +194,18 @@
             <li class="best-product__item">
               <article class="product-card">
                 <header class="product-card__head">
-                  <div class="product-card__image image-wrapper">
-                    <img class="image" src="img/best/3.png" alt="">
-                  </div>
+                  <img class="product-card__image" src="img/best/3.png" alt="">
                   <div class="product-card__title-wrapper">
-                    <div class="product-card__position-rating">#3 Selling</div>
+                    <div class="product-card__rating">#3 Selling</div>
                     <h3 class="product-card__title h3">Iced Coffee</h3>
                   </div>
                 </header>
                 <div class="product-card__body">
-                  <div class="product-card__text h6">
+                  <div class="product-card__text text-small">
                     <p> Amet minim mollit non deserunt dolor ullamco est sit aliqua dolor do amet sint. Velit officia
                       consequat duis.</p>
                   </div>
-                  <div class="product-card__selling">
+                  <div class="product-card__prices">
                     <div class="product-card__price">$59.99</div>
                     <a href="#" class="product-card__button button">Order now</a>
                   </div>
@@ -233,6 +225,7 @@
             </div>
             <a href="#" class="mobile__button button">Download our app</a>
           </div>
+
         </div>
       </section>
       <section class="reviews">
@@ -240,50 +233,52 @@
           <ul class="reviews__list">
             <li class="reviews__item reviews__item_invisibly">
               <div class="reviews-card">
-                <div class="reviews-card__foto">
-                  <img src="img/reviews/foto2.jpg" alt="">
-                </div>
-                <header class="reviews-card__head">
-                  <div class="reviews-card__name">Brooklyn Simmons</div>
-                  <div class="reviews-card__rating">
-                    <div class="reviews-card__star"></div>
-                    <div class="reviews-card__star"></div>
-                    <div class="reviews-card__star"></div>
-                    <div class="reviews-card__star"></div>
-                    <div class="reviews-card__star"></div>
+                <img class="reviews-card__foto" src="img/reviews/foto2.jpg" alt="">
+                <div class="reviews-card__content">
+                  <header class="reviews-card__head">
+                    <div class="reviews-card__name">Brooklyn Simmons</div>
+                    <div class="reviews-card__rating">
+                      <div class="reviews-card__star"></div>
+                      <div class="reviews-card__star"></div>
+                      <div class="reviews-card__star"></div>
+                      <div class="reviews-card__star"></div>
+                      <div class="reviews-card__star"></div>
+                    </div>
+                  </header>
+                  <div class="reviews-card__text text-small">
+                    <p> “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                      consequat
+                      duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet
+                      minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”</p>
                   </div>
-                </header>
-                <div class="reviews-card__text h6">
-                  <p> “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet
-                    minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”</p>
                 </div>
               </div>
             </li>
             <li class="reviews__item">
               <div class="reviews-card">
-                <div class="reviews-card__foto">
-                  <img src="img/reviews/foto2.jpg" alt="">
-                </div>
-                <header class="reviews-card__head">
-                  <div class="reviews-card__name">Imam White</div>
-                  <div class="reviews-card__stars">
-                    <div class="reviews-card__star"></div>
-                    <div class="reviews-card__star"></div>
-                    <div class="reviews-card__star"></div>
-                    <div class="reviews-card__star"></div>
-                    <div class="reviews-card__star"></div>
+                <img class="reviews-card__foto" src="img/reviews/foto2.jpg" alt="">
+                <div class="reviews-card__content">
+                  <header class="reviews-card__head">
+                    <div class="reviews-card__name">Imam White</div>
+                    <div class="reviews-card__stars">
+                      <div class="reviews-card__star"></div>
+                      <div class="reviews-card__star"></div>
+                      <div class="reviews-card__star"></div>
+                      <div class="reviews-card__star"></div>
+                      <div class="reviews-card__star"></div>
+                    </div>
+                  </header>
+                  <div class="reviews-card__text text-small">
+                    <p> “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                      consequat
+                      duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet
+                      minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”</p>
                   </div>
-                </header>
-                <div class="reviews-card__text h6">
-                  <p> “Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet
-                    minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia”</p>
                 </div>
               </div>
             </li>
           </ul>
-          <div class="reviews__content">
+          <div class="reviews__body">
             <h2 class="reviews__title h2">What Our Customers Say</h2>
             <div class="reviews-rating">
               <div class="reviews-rating__value h3">4.9</div>
@@ -295,7 +290,7 @@
                   <div class="reviews-rating__star"></div>
                   <div class="reviews-rating__star"></div>
                 </div>
-                <div class="reviews-rating__text h6">based on 2452+ reviews</div>
+                <div class="reviews-rating__text text-small">based on 2452+ reviews</div>
               </div>
             </div>
             <div class="reviews__arrows">
@@ -312,73 +307,73 @@
     </main>
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__top top-footer">
-          <div class="top-footer__content">
-            <div class="top-footer__logo image">
-              <img src="img/footer/logo.png" alt="">
+        <div class="footer__content">
+          <div class="footer__text-content">
+            <img class="footer__logo" src="img/footer/logo.png" alt="">
+            <div class="footer__text text-middle">
+              <p>We made it our mission to create community everyday and grow meaningful,
+                lasting relationships with our staff, our suppliers and of course you, our customers.</p>
             </div>
-            <div class="top-footer__text">We made it our mission to create community everyday and grow meaningful,
-              lasting relationships with our staff, our suppliers and of course you, our customers.</div>
           </div>
-          <div class="top-footer__contacts contacts">
-            <div class="contacts__title title-small">Contact Alowishus!</div>
-            <div class="contacts__email email-contacts">
-              <div class="email-contacts__icon image">
-                <img src="img/footer/email.svg" alt="">
-              </div>
-              <a href="mailto:alowishus@gmail.com">alowishus@gmai.com</a>
+
+          <div class="footer__contacts contacts">
+            <h3 class="footer__title h3">Contact Alowishus!</h3>
+            <div class="contacts__email text-middle">
+              <a href="mailto:alowishus@gmail.com">
+                <img class="contacts__image" src="img/footer/email.svg" alt="">
+              </a>
+              <a href="mailto:alowishus@gmail.com">alowishus@gmail.com</a>
             </div>
-            <div class="contacts__tel tel-contacts">
-              <div class="tel-contacts__icon image">
-                <img src="img/footer/tel.svg" alt="">
-              </div>
+            <div class="contacts__tel text-middle">
+              <a href="tel:+1102142142451">
+                <img class="contacts__image" src="img/footer/tel.svg" alt="">
+              </a>
               <a href="tel:+1102142142451">+110 214 214 2451</a>
             </div>
             <div class="contacts__social social">
               <a href="" class="social__facebook">
-                <img src="img/footer/facebook.svg" alt="">
+                <img class="contacts__image" src="img/footer/facebook.svg" alt="">
               </a>
               <a href="" class="social__instagram">
-                <img src="img/footer/instagram.svg" alt="">
+                <img class="contacts__image" src="img/footer/instagram.svg" alt="">
               </a>
               <a href="" class="social__twitter">
-                <img src="img/footer/twitter.svg" alt="">
+                <img class="contacts__image" src="img/footer/twitter.svg" alt="">
               </a>
               <a href="" class="social__linkedIn">
-                <img src="img/footer/linkedIn.svg" alt="">
+                <img class="contacts__image" src="img/footer/linkedIn.svg" alt="">
               </a>
             </div>
           </div>
-        </div>
-        <div class="footer__center center-footer">
-          <div class="center-footer__content">
-            <div class="center-footer__title title-small">Store Locations</div>
-            <div class="center-footer__text">Find your nearest Alowishus store with opening hours, location and contact
-              details.</div>
-            <a href="" class="center-footer__find">
+
+          <div class="footer__search">
+            <h3 class="footer__title h3">Store Locations</h3>
+            <div class="footer__text text-middle">
+              <p> Find your nearest Alowishus store with opening hours, location and contact details.</p>
+            </div>
+            <a href="" class="footer__find">
               <span>Find my Alowishus </span>
               <img src="img/footer/arrow.svg" alt="">
             </a>
           </div>
-          <div class="center-footer__subscribe subscribe">
-            <div class="subscribe__title title-small">First One’s On Us!</div>
-            <input type="text" class="subscribe__input"> E-mail
-            <a href="" class="subscribe__btn btn">
-              <span>Subscribe</span>
-            </a>
+
+          <div class="footer__subscribe">
+            <h3 class="footer__title h3">First One’s On Us!</h3>
+            <input type="email" class="footer__input" placeholder="E-mail">
+            <input type="submit" class="footer__button button" value="Subscribe">
           </div>
         </div>
-        <div class="footer__bottom bottom-footer">
-          <div class="bottom-footer__copyright">Copytright © 2022 <b>Alowishus Delicious</b></div>
-          <div class="bottom-footer__rules rules">
-            <div class="rules__termsOfUse">Terms of Use</div>
-            <div class="rules__privacyPolicy">Privacy Policy</div>
+        <div class="footer__bottom">
+          <div class="footer__copyright">Copytright © 2022 <b>Alowishus Delicious</b></div>
+          <div class="footer__rules rules">
+            <div class="rules__terms">Terms of Use</div>
+            <div class="rules__privacy">Privacy Policy</div>
           </div>
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
