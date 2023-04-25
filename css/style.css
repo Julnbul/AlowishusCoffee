@@ -16,6 +16,10 @@ body {
   background: linear-gradient(173.34deg, #FFFFFF -0.11%, #FFFFFF -0.11%, rgba(243, 244, 245, 0.2) 11.63%, #F3F4F5 27.81%, rgba(243, 244, 245, 0) 44.68%, rgba(243, 244, 245, 0.68) 60.31%, #F3F4F5 79.06%, #FFFFFF 99.89%);
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -202,7 +206,8 @@ h3,
 }
 
 .menu__link:hover {
-  box-shadow: 0 1px var(--color-dark);
+  border-bottom: 1px solid var(--color-dark);
+ 
 }
 
 .header__basket {
@@ -245,21 +250,16 @@ h3,
   height: 18px;
 }
 
-/*------------------------------*/
 .header__burger-button span,
 .header__burger-button::before,
 .header__burger-button::after {
+  content: "";
   left: 0;
   position: absolute;
   height: 2px;
   width: 100%;
   background-color: #000;
   transition: all 0.3s ease 0s;
-}
-
-.header__burger-button::before,
-.header__burger-button::after {
-  content: "";
 }
 
 .header__burger-button::before {
@@ -278,7 +278,10 @@ h3,
 
 
 /*------------burger-menu-active------------------*/
-/*
+.header__burger-button._active {
+  position: relative;
+  z-index: 4;
+}
 .header__burger-button._active span {
   transform: scale(0) translate(0px, -50%);
 }
@@ -293,55 +296,46 @@ h3,
   transform: rotate(45deg) translate(0px, 50%);
 }
 
-
-.header__menu {
+.header__menu._active {
   position: fixed;
-  z-index: 3;
+  z-index: 2; 
   top: 0;
-  left: -100%;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: var(--color-white);
-  padding: 100px 30px 30px 30px;
+  padding: 70px 30px 30px 30px;
   overflow: auto;
 }
 
-.header__menu._active {
-  left: 0;
-}
-
-.menu__plug {
-  display: block;
-  content: "";
-  position: fixed;
-  z-index: 4;
-  width: 100%;
-  top: 0;
-  left: -100%;
-  padding-top: 17%;
-  background-color: var(--color-white);
-}
-
-.menu__plug._active {
-  left: 0;
-}
-
-.menu__list {
+.header__menu._active>.menu__list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5%;
 }
 
-.menu__list>li:not(:last-child) {
+.header__menu._active>.menu__list>li:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.menu__link {
-  font-size: calc(26px + 9 * (100vw / 1645));
+.header__menu._active .menu__link {
+  font-size: calc(20px + 9 * (100vw / 1645));
   color: #404242;
 }
-*/
+
+
+ .menu__plug._active {
+  display: block;
+  content: "";
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--color-white);
+}
+
 
 /*------------------------------header-adaptive-------------------------------*/
 @media (max-width: 991px) {
@@ -370,8 +364,8 @@ h3,
     left: 0;
     bottom: 0;
     right: 0;
-
   }
+  
 }
 
 /*===================================main===================================*/
