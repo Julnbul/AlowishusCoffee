@@ -354,13 +354,13 @@ h3,
   }
 
   .header__container {
-    padding-bottom: 60px;
+    padding-bottom: 70px;
   }
 
   .header__button-wrapper {
     position: absolute;
     text-align: center;
-    top: 60px;
+    top: 70px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -405,8 +405,6 @@ h3,
   background: url(../img/start/bg.png) center/contain no-repeat;
   top: 0px;
   right: -16px;
-
-
   width: 56%;
   height: 100%;
 }
@@ -473,6 +471,11 @@ h3,
 @media (max-width: 767px) {
   .start__container::before {
     opacity: 0.2;
+    width: 100%;
+  }
+
+  .start__container::after {
+    display: none;
   }
 }
 
@@ -812,7 +815,6 @@ h3,
 .mobile {
   position: relative;
   margin-bottom: 219px;
-  
 }
 
 .mobile::before {
@@ -866,17 +868,15 @@ h3,
 }
 
 @media (max-width: 767px) {
-  .mobile {
-    background: none;
-  }
 
   .mobile::before {
-    opacity: 0.4;
+    opacity: 0.2;
   }
 
   .mobile__container {
     padding-top: 50px;
     padding-bottom: 0px;
+    background: none;
   }
 
   .mobile__body {
