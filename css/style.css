@@ -402,7 +402,7 @@ h3,
 .start__container::before {
   content: "";
   position: absolute;
-  background: url("/img/start/bg.png") center/contain no-repeat;
+  background: url("../img/start/bg.png") center/contain no-repeat;
   top: 0px;
   right: -16px;
 
@@ -482,7 +482,7 @@ h3,
 .explore {
   padding-top: 156px;
   margin-bottom: 190px;
-  background: url(/img/explore/bg.png) 0 60px no-repeat;
+  background: url("../img/explore/bg.png") 0 60px no-repeat;
 }
 
 .explore__container {}
@@ -604,7 +604,7 @@ h3,
 .order__container::before {
   position: absolute;
   content: "";
-  background: url(/img/order/bg.png) no-repeat;
+  background: url("../img/order/bg.png") no-repeat;
   background-size: auto 100%;
   top: 0px;
   right: 0px;
@@ -663,7 +663,7 @@ h3,
 
 .best-product::before {
   content: "";
-  background: url(/img/best/bg.png) top right no-repeat;
+  background: url("../img/best/bg.png") top right no-repeat;
   position: absolute;
   top: -171px;
   right: 0px;
@@ -812,13 +812,12 @@ h3,
 .mobile {
   position: relative;
   margin-bottom: 219px;
-  background: url(/img/mobile/bg.png) top right/auto 100% no-repeat;
-  /* filter: drop-shadow(0px 45px 80px rgba(175, 183, 190, 0.21)); */
+  
 }
 
 .mobile::before {
   content: "";
-  background: url(/img/mobile/bg-min.png) no-repeat;
+  background: url("../img/mobile/bg-min.png") no-repeat;
   position: absolute;
   top: -150px;
   right: 0px;
@@ -830,6 +829,7 @@ h3,
 .mobile__container {
   padding-top: 176px;
   padding-bottom: 111px;
+  background: url("../img/mobile/bg.png") top right/auto 100% no-repeat;
 }
 
 .mobile__body {
@@ -893,7 +893,7 @@ h3,
 
 .reviews::before {
   content: "";
-  background: url(/img/reviews/bg.png) no-repeat;
+  background: url("../img/reviews/bg.png") no-repeat;
   position: absolute;
   top: -423px;
   right: 0px;
@@ -904,7 +904,7 @@ h3,
 
 .reviews::after {
   content: "";
-  background: url(/img/reviews/bg_bottom.png) no-repeat;
+  background: url("../img/reviews/bg_bottom.png") no-repeat;
   position: absolute;
   width: 202px;
   height: 540px;
