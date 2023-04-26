@@ -402,7 +402,7 @@ h3,
 .start__container::before {
   content: "";
   position: absolute;
-  background: url("../img/start/bg.png") center/contain no-repeat;
+  background: url(../img/start/bg.png) center/contain no-repeat;
   top: 0px;
   right: -16px;
 
